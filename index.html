@@ -12,15 +12,25 @@
 <!---------------------------------Head^-------------------------------------->
 
 <body style="background-color: #424242; overflow-x: hidden;">
-    <nav class="navbar navbar-dark sticky-top" style="background-color: #424242;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #424242;">
         <div class="container-fluid">
           <span class="navbar-brand mb-0 h1">Steven Weeden</span>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <button class="nav-item nav-link" id="homeNav" onclick="scrollToSection('home')">Home</button>
+                <button class="nav-item nav-link" id="aboutNav" onclick="scrollToSection('about')">About Me</button>
+                <button class="nav-item nav-link" id="projectsNav" onclick="scrollToSection('projects')">Projects</button>
+                <button class="nav-item nav-link" id="contactNav" onclick="scrollToSection('contact')">Contact</button>
+                </div>
+            </div>
         </div>
-      </nav>
+    </nav>
 
 <!---------------------------------NavBar^-------------------------------------->
 
-<div id="home" class="container d-flex justify-content-center align-items-center text-center section" style="height: 100vh;">
+<div id="home" class="container d-flex justify-content-center align-items-center text-center section" style="height: 70vh;">
     <div class="row">
         
         <div class="col-12">
@@ -35,15 +45,32 @@
         <!-- Image -->
         <div class="col-12 mt-5">
             <img src="assets/img/1604462088123.jpg" 
-                 class="rounded-circle img-fluid animate__animated animate__fadeInRight" 
+                 class="rounded-circle img-fluid animate__animated animate__fadeInRight border border-white border-3" 
                  alt="Steven Weeden" width="300" height="300">
         </div>
+
+        <div class="col-12 mt-5 animate__animated animate__fadeInUpBig">
+            <button type="button" class="btn btn-secondary rounded mx-2 border border-white border-3" onclick="scrollToSection('about')" style="width: 150px; height: 75px; font-size: 1.6em;">About Me</button>
+            <button type="button" class="btn btn-secondary rounded mx-2 border border-white border-3" onclick="scrollToSection('projects')" style="width: 150px; height: 75px; font-size: 1.6em;">Projects</button>
+            <button type="button" class="btn btn-secondary rounded mx-2 border border-white border-3" onclick="scrollToSection('contact')" style="width: 150px; height: 75px; font-size: 1.6em;">Contact</button>
+        </div>
+
     </div>
 </div>
 
 <div id="about" class="container text-center section" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
     <h3 class="text-secondary">About Me</h3>
 </div>
+
+<div id="projects" class="container text-center section" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <h3 class="text-secondary">Projects</h3>
+</div>
+
+<div id="contact" class="container text-center section" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <h3 class="text-secondary">Contact</h3>
+</div>
+
+<script src="assets/js/index.js"></script>
 
 
 </body>
