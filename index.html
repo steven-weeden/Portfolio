@@ -5,20 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap 5 Starter</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
 </head>
-<body style="background-color: #424242;">
+
+<!---------------------------------Head^-------------------------------------->
+
+<body style="background-color: #424242; overflow-x: hidden;">
     <nav class="navbar navbar-dark sticky-top" style="background-color: #424242;">
         <div class="container-fluid">
           <span class="navbar-brand mb-0 h1">Steven Weeden</span>
         </div>
       </nav>
+
 <!---------------------------------NavBar^-------------------------------------->
 
-<div class="container text-center" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-    <h1 class="text-secondary">Steven Weeden</h1>
+<div id="home" class="container d-flex justify-content-center align-items-center text-center section" style="height: 100vh;">
+    <div class="row">
+        
+        <div class="col-12">
+            <h1 class="animate__animated animate__fadeInDown css-3d-text">My Name is</h1>
+        </div>
+        
+        <!-- Name -->
+        <div class="col-12">
+            <h1 class="animate__animated animate__fadeInLeft css-3d-text">Steven Weeden</h1>
+        </div>
+
+        <!-- Image -->
+        <div class="col-12 mt-5">
+            <img src="assets/img/1604462088123.jpg" 
+                 class="rounded-circle img-fluid animate__animated animate__fadeInRight" 
+                 alt="Steven Weeden" width="300" height="300">
+        </div>
+    </div>
 </div>
 
-<div class="container text-center" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+<div id="about" class="container text-center section" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
     <h3 class="text-secondary">About Me</h3>
 </div>
 
