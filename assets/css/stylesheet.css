@@ -13,7 +13,7 @@
  }
  
 .card-pop{
-    background-color: #333; /* Darker shade than the background */
+    background: rgba(51, 51, 51, 0.7); /* Darker shade than the background */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adds a shadow for the 3D effect */
     border-radius: 10px; /* Optional: smooth rounded corners for a subtle effect */
  }
