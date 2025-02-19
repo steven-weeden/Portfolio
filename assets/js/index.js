@@ -8,8 +8,17 @@ function scrollToSection(id) {
         return; // Do nothing if the button is already active
     }
 
-    // Scroll to the section smoothly
-    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    // Get the section element
+    const section = document.getElementById(id);
+
+    // Calculate an offset for better visibility (e.g., to compensate for margins)
+    const offset = 150; // Adjust this value based on your layout
+
+    // Scroll to the section smoothly with the offset
+    window.scrollTo({
+        top: section.offsetTop - offset, // Apply offset to the scroll position
+        behavior: 'smooth'
+    });
 
     // Update the active button
     updateActiveButton(id);
@@ -30,7 +39,7 @@ window.addEventListener('scroll', () => {
             const rect = element.getBoundingClientRect();
 
             // If the section is in the viewport
-            if (rect.top <= 0 && rect.bottom >= 0) {
+            if (rect.top <= window.innerHeight * 0.5 && rect.bottom >= window.innerHeight * 0.5) {
                 currentSection = section;
             }
         });
@@ -39,6 +48,7 @@ window.addEventListener('scroll', () => {
     // Update the active button based on the section in view
     if (currentSection) {
         updateActiveButton(currentSection);
+        toggleNavbarName(currentSection); // Hide/show navbar name based on section
     }
 });
 
@@ -56,7 +66,16 @@ function updateActiveButton(id) {
     activeButton.classList.add('active');
 }
 
-// Initialize the active class on page load (set to Home initially)
-window.addEventListener('load', () => {
-    document.getElementById('homeNav').classList.add('active');
-});
+function toggleNavbarName(section) {
+    const navbarName = document.querySelector('.navbar-brand');
+
+    if (section === 'home') {
+        navbarName.classList.remove('animate__bounceInLeft');
+        navbarName.classList.add('animate__bounceOutLeft'); // Add fadeIn animation
+    } else {
+        navbarName.classList.remove('animate__bounceOutLeft');
+        navbarName.classList.add('animate__bounceInLeft');  // Add the bounceInLeft animation
+        navbarName.style.display = 'block';  // Show name on other sections
+        
+    }
+}

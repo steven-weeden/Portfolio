@@ -13,16 +13,16 @@
 
 <body style="background-color: #424242; overflow-x: hidden;">
 
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #424242;">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #333; padding: 1rem 2rem;">
         <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">Steven Weeden</span>
+          <span id="navName"class="navbar-brand mb-0 h1 animate__animated" style="display: none; font-size: 2rem;">Steven Weeden</span>
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                <button class="nav-item nav-link" id="homeNav" onclick="scrollToSection('home')">Home</button>
-                <button class="nav-item nav-link" id="aboutNav" onclick="scrollToSection('about')">About Me</button>
-                <button class="nav-item nav-link" id="projectsNav" onclick="scrollToSection('projects')">Projects</button>
-                <button class="nav-item nav-link" id="contactNav" onclick="scrollToSection('contact')">Contact</button>
+                <button class="active nav-item nav-link mx-3" id="homeNav" onclick="scrollToSection('home')" style="font-size: 1.5rem;">Home</button>
+                <button class="nav-item nav-link mx-3" id="aboutNav" onclick="scrollToSection('about')" style="font-size: 1.5rem;">About Me</button>
+                <button class="nav-item nav-link mx-3" id="projectsNav" onclick="scrollToSection('projects')" style="font-size: 1.5rem;">Projects</button>
+                <button class="nav-item nav-link mx-3" id="contactNav" onclick="scrollToSection('contact')"style="font-size: 1.5rem;">Contact</button>
                 </div>
             </div>
         </div>
@@ -30,7 +30,7 @@
 
 <!---------------------------------NavBar^-------------------------------------->
 
-<div id="home" class="container d-flex justify-content-center align-items-center text-center section" style="height: 70vh;">
+<div id="home" class="container-fluid d-flex justify-content-center align-items-center text-center section card-pop my-5" style="height: 80vh; width: 90vw;">
     <div class="row">
         
         <div class="col-12">
@@ -58,15 +58,15 @@
     </div>
 </div>
 
-<div id="about" class="container text-center section" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+<div id="about" class="container-fluid text-center section card-pop my-5" style="display: flex; justify-content: center; align-items: center; height: 80vh; width: 90vw;">
     <h3 class="text-secondary">About Me</h3>
 </div>
 
-<div id="projects" class="container text-center section" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+<div id="projects" class="container-fluid text-center section card-pop my-5" style="display: flex; justify-content: center; align-items: center; height: 80vh; width: 90vw;">
     <h3 class="text-secondary">Projects</h3>
 </div>
 
-<div id="contact" class="container text-center section" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+<div id="contact" class="container-fluid text-center section card-pop my-5" style="display: flex; justify-content: center; align-items: center; height: 80vh; width: 90vw;">
     <h3 class="text-secondary">Contact</h3>
 </div>
 
