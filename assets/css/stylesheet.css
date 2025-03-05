@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .css-3d-text {
-    font-size: 68px;
+    font-size: auto;
     color: #ebebeb;
     font-family: Arial Black, Gadget, sans-serif;
     text-shadow: 0px 0px 0 rgb(215,215,215),
@@ -12,8 +12,27 @@
                  0px 0px 2px rgba(0,0,0,.2);
  }
  
-.card-pop{
-    background: rgba(51, 51, 51, 0.7); /* Darker shade than the background */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adds a shadow for the 3D effect */
-    border-radius: 10px; /* Optional: smooth rounded corners for a subtle effect */
- }
+ .card-pop {
+    
+    background: rgba(191, 191, 191, 0.7);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: min(2vw, 10px);
+    padding: 1.5rem;
+    margin: 2vh auto;
+}
+
+/* Softer shadow for mobile */
+@media (max-width: 600px) {
+    .card-pop {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Buttons become smaller on mobile */
+@media (max-width: 768px) {
+    .btn {
+        width: 100px;
+        height: 50px;
+        font-size: 1.2em;
+    }
+}
