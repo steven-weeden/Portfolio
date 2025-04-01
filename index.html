@@ -14,7 +14,7 @@
 
 <body style="background-color: #424242; overflow-x: hidden;">
 
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #333; padding: 1rem 2rem;">
+    <!--<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #333; padding: 1rem 2rem;">
         <div class="container-fluid">
           <span id="navName"class="navbar-brand mb-0 h1 animate__animated" style="display: none; font-size: 2rem;">Steven Weeden</span>
 
@@ -27,138 +27,167 @@
                 </div>
             </div>
         </div>
-    </nav>
+    </nav>-->
+    <div class="row gx-0">
+        <!-- Sidebar -->
+        <div class="col-3 p-1">
+            <nav class="navbar navbar-dark bg-dark vh-100 position-sticky top-0 w-100">
+                <div class="container-fluid flex-column align-items-start">
+                    <h4 class="px-3 pt-3 text-white">Sidebar</h4>
+                    <ul class="nav flex-column w-100" id="navbarNavAltMarkup">
+                        <li class="nav-item">
+                            <button class="nav-link active text-white w-100 text-start px-4" id="homeNav" onclick="scrollToSection('home')" style="font-size: 1.5rem;">Home</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link text-white w-100 text-start px-4" id="aboutNav" onclick="scrollToSection('about')" style="font-size: 1.5rem;">About Me</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link text-white w-100 text-start px-4" id="projectsNav" onclick="scrollToSection('projects')" style="font-size: 1.5rem;">Projects</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link text-white w-100 text-start px-4" id="contactNav" onclick="scrollToSection('contact')" style="font-size: 1.5rem;">Contact</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
 <!---------------------------------NavBar^-------------------------------------->
-<div>
-    <div class="z-n1 position-absolute">
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-    </div>
+
+        <div class="z-n1 position-absolute">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
     
-    <div id="home" class="container d-flex flex-column justify-content-center align-items-center text-center card-pop">
-        <div class="row">
-            
-            <div class="col-12">
-                <h1 class="animate__animated animate__fadeInDown css-3d-text">My Name is</h1>
-            </div>
-  
-            <!-- Name -->
-            <div class="col-12">
-                <h1 class="animate__animated animate__fadeInLeft css-3d-text">Steven Weeden</h1>
-            </div>
+    <div class="col-9">
+        <div class="d-flex">
 
-            <!-- Image -->
-            <div class="col-12 mt-5 animate__animated animate__fadeInRight" style="height:max-content">
-                <img src="assets/img/1604462088123.jpg" 
-                    class="rounded-circle img-fluid border border-white border-3"
-                    style="height: auto; width: 25%"
-                    alt="Steven Weeden">
-            </div>
+        <div id="home" class=" p-4 vh-100 flex-column flex-fill justify-content-center align-items-center text-center card-pop mt-0" style="width: 75vw;">
+            <div class="row">
+                
+                <div class="col-12">
+                    <h1 class="animate__animated animate__fadeInDown css-3d-text">My Name is</h1>
+                </div>
+    
+                <!-- Name -->
+                <div class="col-12">
+                    <h1 class="animate__animated animate__fadeInLeft css-3d-text">Steven Weeden</h1>
+                </div>
 
-            <div class="col-12 mt-5 animate__animated animate__fadeInUpBig">
-                <button type="button" class="btn btn-secondary rounded mx-2 border border-white border-3" onclick="scrollToSection('about')" style="width: 150px; height: 75px; font-size: 1.6em;">About Me</button>
-                <button type="button" class="btn btn-secondary rounded mx-2 border border-white border-3" onclick="scrollToSection('projects')" style="width: 150px; height: 75px; font-size: 1.6em;">Projects</button>
-                <button type="button" class="btn btn-secondary rounded mx-2 border border-white border-3" onclick="scrollToSection('contact')" style="width: 150px; height: 75px; font-size: 1.6em;">Contact</button>
-            </div>
-        </div>    
+                <!-- Image -->
+                <div class="col-12 mt-5 animate__animated animate__fadeInRight" style="height:max-content">
+                    <img src="assets/img/1604462088123.jpg" 
+                        class="rounded-circle img-fluid border border-white border-3"
+                        style="height: auto; width: 25%"
+                        alt="Steven Weeden">
+                </div>
 
-    </div>
+                <div class="col-12 mt-5 animate__animated animate__fadeInUpBig">
+                    <button type="button" class="btn btn-secondary rounded mx-2 border border-white border-3" onclick="scrollToSection('about')" style="width: 150px; height: 75px; font-size: 1.6em;">About Me</button>
+                    <button type="button" class="btn btn-secondary rounded mx-2 border border-white border-3" onclick="scrollToSection('projects')" style="width: 150px; height: 75px; font-size: 1.6em;">Projects</button>
+                    <button type="button" class="btn btn-secondary rounded mx-2 border border-white border-3" onclick="scrollToSection('contact')" style="width: 150px; height: 75px; font-size: 1.6em;">Contact</button>
+                </div>
+            </div>    
 
-    <div id="about" class="container d-flex flex-column justify-content-center align-items-center text-center card-pop">
-        <div class="row">
-
-            <div class="col-12">
-                <h3 class="text-black">About Me</h3>
-            </div>
-
-            <div class="col-12">
-                <p class="text-black">Hello, my name is Steven Weeden, and I'm a soon-to-be graduate with a degree in Computer Science from Texas State University. From 
-                    a young age, I have always been drawn to computers and the everlasting advancements in technology. Ever since receiving my first laptop, I knew computer science was the field right for me.
-                </p>
-
-                <p class="text-black">Through my educational career I have developed skills within multiple fields of computer science. I've worked on projects such as training machine learning models, 
-                    full-stack applications, and game development. By working on these projects I've been able to strengthen my skills in Python, Typescript, Java, C++, SQL and many more.
-                    I also have a strong love and self learning of electrical engineering and a nice set of handyman skills!
-                </p>
-
-                <p class="text-black">In my free time, I enjoy going to the gym and spending time at home relaxing. My years in college have taught me how crucial a work/life balance is for my productivity.
-                    Therefore, I believe it is important to take time out of work and pursue hobbies that can help distress from exhausting work days. I also enjoy furthering my educational background
-                    in the computer science field, either through schooling or self-teaching. I believe it's important to keep learning and developing my skills to stay on top of this rapidly evolving field.
-                </p>
-            </div>
         </div>
-    </div>
+        </div>
 
-    <div id="projects" class="container d-flex flex-column align-items-center text-center card-pop">
-        <div class="row justify-content-center">
-            <div class="col-12">
-                <h3 class="text-black">Projects</h3>
-            </div>
+        <div id="about" class="vh-100 flex-column justify-content-center align-items-center text-center card-pop">
+            <div class="row">
 
-            <div class="col-12 mt-3">
-                <a href="https://github.com/steven-weeden" target="_blank">
-                    <img src="assets\img\github-mark.svg" alt="Github Logo">
-                </a>
+                <div class="col-12">
+                    <h3 class="text-black">About Me</h3>
+                </div>
+
+                <div class="col-12">
+                    <p class="text-black">Hello, my name is Steven Weeden, and I'm a soon-to-be graduate with a degree in Computer Science from Texas State University. From 
+                        a young age, I have always been drawn to computers and the everlasting advancements in technology. Ever since receiving my first laptop, I knew computer science was the field right for me.
+                    </p>
+
+                    <p class="text-black">Through my educational career I have developed skills within multiple fields of computer science. I've worked on projects such as training machine learning models, 
+                        full-stack applications, and game development. By working on these projects I've been able to strengthen my skills in Python, Typescript, Java, C++, SQL and many more.
+                        I also have a strong love and self learning of electrical engineering and a nice set of handyman skills!
+                    </p>
+
+                    <p class="text-black">In my free time, I enjoy going to the gym and spending time at home relaxing. My years in college have taught me how crucial a work/life balance is for my productivity.
+                        Therefore, I believe it is important to take time out of work and pursue hobbies that can help distress from exhausting work days. I also enjoy furthering my educational background
+                        in the computer science field, either through schooling or self-teaching. I believe it's important to keep learning and developing my skills to stay on top of this rapidly evolving field.
+                    </p>
+                </div>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-12 border border-black mt-4 rounded border-3">
+        <div id="projects" class="vh-100 flex-column align-items-center text-center card-pop">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h3 class="text-black">Projects</h3>
+                </div>
 
-                <div class="row m-3">
+                <div class="col-12 mt-3">
+                    <a href="https://github.com/steven-weeden" target="_blank">
+                        <img src="assets\img\github-mark.svg" alt="Github Logo">
+                    </a>
+                </div>
+            </div>
 
-                    <div class="col-6 d-flex align-items-center justify-content-center">
-                        <a href="https://github.com/steven-weeden" target="_blank">
-                            <img src="https://avatars.githubusercontent.com/u/125560488?v=4" alt="Github Profile Image" class="img-fluid align-items-start rounded-circle" style="height: auto; width:65%;">
-                        </a>
-                    
+            <div class="row">
+                <div class="col-12 border border-black mt-4 rounded border-3">
 
-                    
-                        <a href="https://github.com/steven-weeden" target="_blank" style="text-decoration:none">
-                            <h1 class="text-black">steven-weeden</h1>
-                        </a>
+                    <div class="row m-3">
+
+                        <div class="col-6 d-flex align-items-center justify-content-center">
+                            <a href="https://github.com/steven-weeden" target="_blank">
+                                <img src="https://avatars.githubusercontent.com/u/125560488?v=4" alt="Github Profile Image" class="img-fluid align-items-start rounded-circle" style="height: auto; width:65%;">
+                            </a>
+                        
+
+                        
+                            <a href="https://github.com/steven-weeden" target="_blank" style="text-decoration:none">
+                                <h1 class="text-black">steven-weeden</h1>
+                            </a>
+
+                        </div>
 
                     </div>
+                    
 
                 </div>
-                
-
             </div>
+    
         </div>
-  
-    </div>
 
-    <div id="contact" class="container d-flex flex-column justify-content-center align-items-center text-center card-pop">
-        <h3 class="text-black">Contact</h3>
+        <div id="contact" class="vh-100 flex-column justify-content-center align-items-center text-center card-pop">
+            <h3 class="text-black">Contact</h3>
+        </div>
+    </div>
     </div>
 </div>
 
