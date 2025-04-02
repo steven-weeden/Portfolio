@@ -32,20 +32,23 @@
         <!-- Sidebar -->
         <div class="col-3 p-1">
             <nav class="navbar navbar-dark bg-dark vh-100 position-sticky top-0 w-100">
-                <div class="container-fluid flex-column align-items-start">
-                    <h4 class="px-3 pt-3 text-white">Sidebar</h4>
+                <img src="assets/img/1604462088123.jpg" 
+                        class="rounded-circle img-fluid border border-white border-3 mx-auto d-flex flex-column align-self-end mb-5"
+                        style="height: auto; width: 50%"
+                        alt="Steven Weeden">
+                <div class="container-fluid d-flex flex-column align-items-center mt-3 w-100 align-self-start">
                     <ul class="nav flex-column w-100" id="navbarNavAltMarkup">
                         <li class="nav-item">
-                            <button class="nav-link active text-white w-100 text-start px-4" id="homeNav" onclick="scrollToSection('home')" style="font-size: 1.5rem;">Home</button>
+                            <button class="nav-link active text-white w-100 text-center px-4" id="homeNav" onclick="scrollToSection('home')" style="font-size: 1.5rem;">Home</button>
                         </li>
                         <li class="nav-item">
-                            <button class="nav-link text-white w-100 text-start px-4" id="aboutNav" onclick="scrollToSection('about')" style="font-size: 1.5rem;">About Me</button>
+                            <button class="nav-link text-white w-100 text-center px-4" id="aboutNav" onclick="scrollToSection('about')" style="font-size: 1.5rem;">About Me</button>
                         </li>
                         <li class="nav-item">
-                            <button class="nav-link text-white w-100 text-start px-4" id="projectsNav" onclick="scrollToSection('projects')" style="font-size: 1.5rem;">Projects</button>
+                            <button class="nav-link text-white w-100 text-center px-4" id="projectsNav" onclick="scrollToSection('projects')" style="font-size: 1.5rem;">Projects</button>
                         </li>
                         <li class="nav-item">
-                            <button class="nav-link text-white w-100 text-start px-4" id="contactNav" onclick="scrollToSection('contact')" style="font-size: 1.5rem;">Contact</button>
+                            <button class="nav-link text-white w-100 text-center px-4" id="contactNav" onclick="scrollToSection('contact')" style="font-size: 1.5rem;">Contact</button>
                         </li>
                     </ul>
                 </div>
@@ -103,11 +106,13 @@
                 </div>
 
                 <!-- Image -->
-                <div class="col-12 mt-5 animate__animated animate__fadeInRight" style="height:max-content">
-                    <img src="assets/img/1604462088123.jpg" 
-                        class="rounded-circle img-fluid border border-white border-3"
-                        style="height: auto; width: 25%"
-                        alt="Steven Weeden">
+                <div class="orbit-container">
+                    <div class="orbit">
+                        <img src="assets/img/1604462088123.jpg" alt="Image 1" class="orbit-image">
+                        <img src="assets/img/1604462088123.jpg" alt="Image 2" class="orbit-image">
+                        <img src="assets/img/1604462088123.jpg" alt="Image 3" class="orbit-image">
+                    </div>
+                    <div class="center-text">Your Text Here</div>
                 </div>
 
                 <div class="col-12 mt-5 animate__animated animate__fadeInUpBig">
