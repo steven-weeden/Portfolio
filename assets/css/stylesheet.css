@@ -117,7 +117,7 @@
 .progress-container {
     height: 102vh; /* Matches sidebar */
     width: 10px; /* Visible width */
-    background: #212529; /* Light grey for visibility */
+    background: #ffffff; /* Light grey for visibility */
     border-radius: 5px;
     position: sticky;
 }
@@ -133,5 +133,5 @@
 
 .progress-bar {
     width: 100%;
-    background-color: #3f3f3f; /* Bootstrap primary color */
+    background-color: #000000; /* Bootstrap primary color */
 }

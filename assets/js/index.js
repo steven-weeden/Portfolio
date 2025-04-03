@@ -31,3 +31,12 @@ window.addEventListener('scroll', () => {
         document.getElementById(`${currentSection}Nav`).classList.add('active');
     }
 });
+
+
+window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+
+    document.querySelector(".progress-bar").style.height = `${scrollPercent}%`;
+});
