@@ -36,21 +36,14 @@
                         class="rounded-circle img-fluid border border-white border-3 mx-auto d-flex flex-column align-self-end mb-5"
                         style="height: auto; width: 50%"
                         alt="Steven Weeden">
+                        
                 <div class="container-fluid d-flex flex-column align-items-center mt-3 w-100 align-self-start">
-                    <ul class="nav flex-column w-100" id="navbarNavAltMarkup">
-                        <li class="nav-item">
-                            <button class="nav-link active text-white w-100 text-center px-4" id="homeNav" onclick="scrollToSection('home')" style="font-size: 1.5rem;">Home</button>
-                        </li>
-                        <li class="nav-item">
-                            <button class="nav-link text-white w-100 text-center px-4" id="aboutNav" onclick="scrollToSection('about')" style="font-size: 1.5rem;">About Me</button>
-                        </li>
-                        <li class="nav-item">
-                            <button class="nav-link text-white w-100 text-center px-4" id="projectsNav" onclick="scrollToSection('projects')" style="font-size: 1.5rem;">Projects</button>
-                        </li>
-                        <li class="nav-item">
-                            <button class="nav-link text-white w-100 text-center px-4" id="contactNav" onclick="scrollToSection('contact')" style="font-size: 1.5rem;">Contact</button>
-                        </li>
-                    </ul>
+                    <div class="navbar-nav flex-column w-100" id="navbarNavAltMarkup">
+                        <button class="active nav-item nav-link mx-3" id="homeNav" onclick="scrollToSection('home')" style="font-size: 1.5rem;">Home</button>
+                        <button class="nav-item nav-link mx-3" id="aboutNav" onclick="scrollToSection('about')" style="font-size: 1.5rem;">About Me</button>
+                        <button class="nav-item nav-link mx-3" id="projectsNav" onclick="scrollToSection('projects')" style="font-size: 1.5rem;">Projects</button>
+                        <button class="nav-item nav-link mx-3" id="contactNav" onclick="scrollToSection('contact')"style="font-size: 1.5rem;">Contact</button>
+                    </div>
                 </div>
             </nav>
             
@@ -98,35 +91,23 @@
             <div class="particle"></div>
         </div>
     
-    <div class="col-9 flex-fill">
-        <div class="d-flex">
+    <div class="col-9 flex-fill ">
 
-        <div id="home" class=" p-4 vh-100 flex-column flex-fill justify-content-center align-items-center text-center card-pop mt-0" style="width: 75vw;">
-            <div class="row">
+        <div id="home" class="container-fluid p-4 vh-100 flex-column flex-fill card-pop mt-0 text-center d-flex justify-content-center align-items-center">
+            <div class="row pb-5">
                 
                 <div class="col-12">
-                    <h1 class="animate__animated animate__fadeInDown css-3d-text">My Name is</h1>
-                </div>
-    
-                <!-- Name -->
-                <div class="col-12">
-                    <h1 class="animate__animated animate__fadeInLeft css-3d-text">Steven Weeden</h1>
-                </div>
-
-
-                <div class="col-12 mt-5 animate__animated animate__fadeInUpBig">
-                    <div class="orbit-container center-text">
+                    <div class="orbit-container">
                         <div class="orbit">
-                            <img src="assets/img/1604462088123.jpg" alt="Image 1" class="orbit-image">
-                            <img src="assets/img/1604462088123.jpg" alt="Image 2" class="orbit-image">
-                            <img src="assets/img/1604462088123.jpg" alt="Image 3" class="orbit-image">
+                            <img src="assets\img\c-.png" alt="Image 1" class="orbit-image">
+                            <img src="assets\img\html.png" alt="Image 2" class="orbit-image">
+                            <img src="assets\img\python.png" alt="Image 3" class="orbit-image">
+                            <img src="assets\img\java-script.png" alt="Image 4" class="orbit-image">
                         </div>
-                        <div class="center-text">Your Text Here</div>
+                        <div class="center-text css-3d-text" style="font-size: 50px;">Steven Weeden</div>
                     </div>
                 </div>
-            </div>    
-
-        </div>
+            </div>             
         </div>
 
         <div id="about" class="vh-100 flex-column justify-content-center align-items-center text-center card-pop">
@@ -193,7 +174,7 @@
     
         </div>
 
-        <div id="contact" class="vh-100 flex-column justify-content-center align-items-center text-center card-pop">
+        <div id="contact" class="vh-100 flex-column justify-content-center align-items-center text-center card-pop mb-0">
             <h3 class="text-black">Contact</h3>
         </div>
     </div>
