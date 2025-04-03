@@ -79,3 +79,12 @@ function toggleNavbarName(section) {
         
     }
 }
+
+document.addEventListener("scroll", function() {
+    let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let progress = (scrollTop / scrollHeight) * 100;
+
+    document.querySelector(".progress-bar").style.height = progress + "%";
+    document.querySelector(".progress-bar").setAttribute("aria-valuenow", progress);
+});

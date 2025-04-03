@@ -30,7 +30,7 @@
     </nav>-->
     <div class="row gx-0">
         <!-- Sidebar -->
-        <div class="col-3 p-1">
+        <div class="col-2">
             <nav class="navbar navbar-dark bg-dark vh-100 position-sticky top-0 w-100">
                 <img src="assets/img/1604462088123.jpg" 
                         class="rounded-circle img-fluid border border-white border-3 mx-auto d-flex flex-column align-self-end mb-5"
@@ -53,8 +53,16 @@
                     </ul>
                 </div>
             </nav>
+            
         </div>
 
+        <div class="col-auto">
+            <div class="progress-container d-flex flex-column position-sticky top-0">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="height: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
 <!---------------------------------NavBar^-------------------------------------->
 
         <div class="z-n1 position-absolute">
@@ -90,7 +98,7 @@
             <div class="particle"></div>
         </div>
     
-    <div class="col-9">
+    <div class="col-9 flex-fill">
         <div class="d-flex">
 
         <div id="home" class=" p-4 vh-100 flex-column flex-fill justify-content-center align-items-center text-center card-pop mt-0" style="width: 75vw;">
@@ -105,20 +113,16 @@
                     <h1 class="animate__animated animate__fadeInLeft css-3d-text">Steven Weeden</h1>
                 </div>
 
-                <!-- Image -->
-                <div class="orbit-container">
-                    <div class="orbit">
-                        <img src="assets/img/1604462088123.jpg" alt="Image 1" class="orbit-image">
-                        <img src="assets/img/1604462088123.jpg" alt="Image 2" class="orbit-image">
-                        <img src="assets/img/1604462088123.jpg" alt="Image 3" class="orbit-image">
-                    </div>
-                    <div class="center-text">Your Text Here</div>
-                </div>
 
                 <div class="col-12 mt-5 animate__animated animate__fadeInUpBig">
-                    <button type="button" class="btn btn-secondary rounded mx-2 border border-white border-3" onclick="scrollToSection('about')" style="width: 150px; height: 75px; font-size: 1.6em;">About Me</button>
-                    <button type="button" class="btn btn-secondary rounded mx-2 border border-white border-3" onclick="scrollToSection('projects')" style="width: 150px; height: 75px; font-size: 1.6em;">Projects</button>
-                    <button type="button" class="btn btn-secondary rounded mx-2 border border-white border-3" onclick="scrollToSection('contact')" style="width: 150px; height: 75px; font-size: 1.6em;">Contact</button>
+                    <div class="orbit-container center-text">
+                        <div class="orbit">
+                            <img src="assets/img/1604462088123.jpg" alt="Image 1" class="orbit-image">
+                            <img src="assets/img/1604462088123.jpg" alt="Image 2" class="orbit-image">
+                            <img src="assets/img/1604462088123.jpg" alt="Image 3" class="orbit-image">
+                        </div>
+                        <div class="center-text">Your Text Here</div>
+                    </div>
                 </div>
             </div>    
 
