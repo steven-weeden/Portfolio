@@ -14,7 +14,7 @@
  
  .card-pop {
     
-    background: rgba(191, 191, 191, 0.7);
+    background: #999897;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     border-radius: min(2vw, 10px);
     padding: 1.5rem;
@@ -116,7 +116,7 @@
 
 .progress-container {
     height: 102vh; /* Matches sidebar */
-    width: 10px; /* Visible width */
+    width: 5px; /* Visible width */
     background: #ffffff; /* Light grey for visibility */
     border-radius: 5px;
     position: sticky;
@@ -133,5 +133,30 @@
 
 .progress-bar {
     width: 100%;
-    background-color: #000000; /* Bootstrap primary color */
+    background-color: #AAB99A; /* Bootstrap primary color */
+}
+
+.nav-button {
+    font-size: 2rem;
+    color: #585563;
+    background: none;
+    border: none;
+}
+
+.nav-button:hover {
+    color:#AAB99A;
+    cursor: pointer;
+}
+
+.navbar .nav-link.active {
+    color: var(--bs-navbar-active-color);
+  }
+
+.navbar {
+    --bs-navbar-active-color: #AAB99A;
+  }
+
+.border{
+    border-color: var(--bs-border-color);
+    --bs-border-color: #AAB99A;
 }
