@@ -14,7 +14,7 @@
  
  .card-pop {
     
-    background: #999897;
+    background: #ECDFCC;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     border-radius: min(2vw, 10px);
     padding: 1.5rem;
@@ -133,7 +133,7 @@
 
 .progress-bar {
     width: 100%;
-    background-color: #AAB99A; /* Bootstrap primary color */
+    background-color: #A5B68D; /* Bootstrap primary color */
 }
 
 .nav-button {
@@ -144,7 +144,7 @@
 }
 
 .nav-button:hover {
-    color:#AAB99A;
+    color:#000000;
     cursor: pointer;
 }
 
@@ -153,10 +153,5 @@
   }
 
 .navbar {
-    --bs-navbar-active-color: #AAB99A;
+    --bs-navbar-active-color: #A5B68D;
   }
-
-.border{
-    border-color: var(--bs-border-color);
-    --bs-border-color: #AAB99A;
-}
