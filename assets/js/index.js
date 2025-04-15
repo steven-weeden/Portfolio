@@ -40,3 +40,44 @@ window.addEventListener("scroll", () => {
 
     document.querySelector(".progress-bar").style.height = `${scrollPercent}%`;
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".home-text");
+    let index = 0;
+
+    function typeNext() {
+        if (index >= elements.length) return;
+
+        const el = elements[index];
+        const parent = el.closest(".col"); // Assuming the parent `.col` is hidden
+
+        // Reveal the line before typing
+        if (parent) {
+            parent.style.display = "block"; // or "flex" if needed
+        } else {
+            el.style.display = "block";
+        }
+
+        const fullText = el.getAttribute("data-text");
+        let i = 0;
+
+        function typeChar() {
+            if (i <= fullText.length) {
+                el.innerHTML = fullText.slice(0, i);
+                i++;
+                setTimeout(typeChar, 80);
+            } else {
+                el.classList.add("finished");
+                if (el.querySelector("span")) {
+                    el.appendChild(el.querySelector("span"));
+                }
+                index++;
+                setTimeout(typeNext, 200);
+            }
+        }
+
+        typeChar();
+    }
+
+    typeNext();
+});
