@@ -14,24 +14,10 @@
 
 <body style="background-color: #FCFAEE; overflow-x: hidden;">
 
-    <!--<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #333; padding: 1rem 2rem;">
-        <div class="container-fluid">
-          <span id="navName"class="navbar-brand mb-0 h1 animate__animated" style="display: none; font-size: 2rem;">Steven Weeden</span>
-
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                <button class="active nav-item nav-link mx-3" id="homeNav" onclick="scrollToSection('home')" style="font-size: 1.5rem;">Home</button>
-                <button class="nav-item nav-link mx-3" id="aboutNav" onclick="scrollToSection('about')" style="font-size: 1.5rem;">About Me</button>
-                <button class="nav-item nav-link mx-3" id="projectsNav" onclick="scrollToSection('projects')" style="font-size: 1.5rem;">Projects</button>
-                <button class="nav-item nav-link mx-3" id="contactNav" onclick="scrollToSection('contact')"style="font-size: 1.5rem;">Contact</button>
-                </div>
-            </div>
-        </div>
-    </nav>-->
     <div class="row gx-0">
         <!-- Sidebar -->
-        <div class="col-2">
-            <nav class="navbar vh-100 position-sticky top-0 w-100" style="background-color: #FCFAEE;">
+        <div class="col-3">
+            <nav class="navbar vh-100 position-sticky top-0 w-100" style="background-color: #e5e5e5;">
                 <img src="assets/img/1604462088123.jpg" 
                         class="rounded-circle img-fluid border border-5 border-color border-3 mx-auto d-flex flex-column align-self-end mb-5"
                         style="height: auto; width: 60%; border-color: #A5B68D"
@@ -42,7 +28,6 @@
                         <button class="nav-button active nav-item nav-link mx-3" id="homeNav" onclick="scrollToSection('home')">Home</button>
                         <button class="nav-button nav-item nav-link mx-3" id="aboutNav" onclick="scrollToSection('about')">About Me</button>
                         <button class="nav-button nav-item nav-link mx-3" id="projectsNav" onclick="scrollToSection('projects')">Projects</button>
-                        <button class="nav-button nav-item nav-link mx-3" id="contactNav" onclick="scrollToSection('contact')">Contact</button>
                     </div>
                 </div>
             </nav>
@@ -56,189 +41,205 @@
                 </div>
             </div>
         </div>
-<!---------------------------------NavBar^-------------------------------------->
+    <!---------------------------------NavBar^-------------------------------------->
     
-    <div class="col-9 flex-fill ">
+        <div class="col-8 flex-fill ">
 
-        <div id="home" class="container-fluid p-4 vh-100 flex-column flex-fill card-pop mt-0 text-center d-flex justify-content-center align-items-center">
-            <div class="row pb-5">
+            <div id="home" class="container-fluid p-4 vh-100 card-pop mt-0 d-flex justify-content-center align-items-center flex-column">
+                <div class="row text-start" style="max-width: 600px;">
+                    <div class="col-12">
+                        <div class="home-text" style="font-size: 50px;">Hello, I'm <span style="color: rgb(0, 133, 221);">Steven</span></div>
+                    </div>
+                    <div class="col-12">
+                        <div class="home-text" style="font-size: 50px;">I am a graduated</div>
+                    </div>
+                    <div class="col-12">
+                        <div class="home-text" style="font-size: 50px;"><span style="color: rgb(0, 133, 221);">Computer Science</span> Major</div>
+                    </div>
+                </div>      
+            </div>
+
+            <div id="about" class="vh-100 flex-column justify-content-center align-items-center text-center card-pop">
+                <div class="row">
+
+                    <div class="col-12">
+                        <h3 class="text-black">About Me</h3>
+                    </div>
+                </div>
                 
-                <div class="col-12">
-                    <div class="center-text css-3d-text" style="font-size: 50px;">Steven Weeden</div>
-                </div>
-            </div>             
-        </div>
+                <div class="row d-flex">
+                    <div class="col rounded mx-1 my-2 text-bg-dark align-self-center h-100">
+                        <div class="row">
+                            <div class="col-12">
+                                <img src="assets\img\grad_cap.png" alt="grad_cap" class="img-fluid">
+                            </div>
+                            <div class="col-12">
+                                <h3>Education</h3>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <p class="text-bg-dark">Hello, my name is Steven Weeden, and I'm a soon-to-be graduate with a degree in Computer Science from Texas State University. From 
+                                    a young age, I have always been drawn to computers and the everlasting advancements in technology. Ever since receiving my first laptop, I knew computer science was the field right for me.
+                                </p>
+                            </div>
+                            
 
-        <div id="about" class="vh-100 flex-column justify-content-center align-items-center text-center card-pop">
-            <div class="row">
-
-                <div class="col-12">
-                    <h3 class="text-black">About Me</h3>
-                </div>
-
-                <div class="col rounded mx-1 my-2 text-bg-dark align-self-center">
-                    <div class="row">
-                        <div class="col-12">
-                            <img src="assets\img\grad_cap.png" alt="grad_cap" class="img-fluid">
-                        </div>
-                        <div class="col-12">
-                            <h3>Education</h3>
-                        </div>
-                        <div class="col-12 mt-3">
-                            <p class="text-bg-dark">Hello, my name is Steven Weeden, and I'm a soon-to-be graduate with a degree in Computer Science from Texas State University. From 
-                                a young age, I have always been drawn to computers and the everlasting advancements in technology. Ever since receiving my first laptop, I knew computer science was the field right for me.
-                            </p>
-                        </div>
-                        
-
-                    </div>
-                </div>
-                <div class="col rounded mx-1 my-2 text-bg-dark align-self-center">
-                    <div class="row">
-                        <div class="col-12">
-                            <img src="assets\img\person.png" alt="person logo" class="img-fluid">
-                        </div>
-                        <div class="col-12">
-                            <h3>Personal Life</h3>
-                        </div>
-                        <div class="col-12 mt-3">
-                            <p class="text-bg-dark">Through my educational career I have developed skills within multiple fields of computer science. I've worked on projects such as training machine learning models, 
-                                full-stack applications, and game development. By working on these projects I've been able to strengthen my skills in Python, Typescript, Java, C++, SQL and many more.
-                                I also have a strong love and self learning of electrical engineering and a nice set of handyman skills!
-                            </p>
-                        </div>
-                        
-
-                    </div>
-                </div>    
-                <div class="col rounded mx-1 my-2 text-bg-dark align-self-center">
-                    <div class="row">
-                        <div class="col-12">
-                            <img src="assets\img\briefcase.png" alt="briefcase logo" class="img-fluid">
-                        </div>
-                        <div class="col-12">
-                            <h3>Work Experience</h3>
-                        </div>
-                        <div class="col-12 mt-3">
-                            <p class="text-bg-dark">In my free time, I enjoy going to the gym and spending time at home relaxing. My years in college have taught me how crucial a work/life balance is for my productivity.
-                                Therefore, I believe it is important to take time out of work and pursue hobbies that can help distress from exhausting work days. I also enjoy furthering my educational background
-                                in the computer science field, either through schooling or self-teaching. I believe it's important to keep learning and developing my skills to stay on top of this rapidly evolving field.
-                            </p>
                         </div>
                     </div>
+
+                    <div class="col rounded mx-1 my-2 text-bg-dark align-self-center h-100">
+                        <div class="row">
+                            <div class="col-12">
+                                <img src="assets\img\person.png" alt="person logo" class="img-fluid">
+                            </div>
+                            <div class="col-12">
+                                <h3>Personal Life</h3>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <p class="text-bg-dark">Through my educational career I have developed skills within multiple fields of computer science. I've worked on projects such as training machine learning models, 
+                                    full-stack applications, and game development. By working on these projects I've been able to strengthen my skills in Python, Typescript, Java, C++, SQL and many more.
+                                    I also have a strong love and self learning of electrical engineering and a nice set of handyman skills!
+                                </p>
+                            </div>
+                            
+
+                        </div>
+                    </div>    
+
+                    <div class="col rounded mx-1 my-2 text-bg-dark align-self-center h-100">
+                        <div class="row">
+                            <div class="col-12">
+                                <img src="assets\img\briefcase.png" alt="briefcase logo" class="img-fluid">
+                            </div>
+                            <div class="col-12">
+                                <h3>Work Experience</h3>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <p class="text-bg-dark">In my free time, I enjoy going to the gym and spending time at home relaxing. My years in college have taught me how crucial a work/life balance is for my productivity.
+                                    Therefore, I believe it is important to take time out of work and pursue hobbies that can help distress from exhausting work days. I also enjoy furthering my educational background
+                                    in the computer science field, either through schooling or self-teaching. I believe it's important to keep learning and developing my skills to stay on top of this rapidly evolving field.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-12">
+                        <h3 class="text-black">Contact</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+
+
                 </div>
             </div>
-        </div>
 
-        <div id="projects" class="container-fluid vh-100 flex-column align-items-center text-center card-pop">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <h3 class="text-black">Projects</h3>
-                </div>
+            <div id="projects" class="container-fluid vh-100 flex-column align-items-center text-center card-pop">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <h3 class="text-black">Projects</h3>
+                    </div>
 
-                <div class="col-12 mt-3">
-                    <a href="https://github.com/steven-weeden" target="_blank">
-                        <img src="assets\img\github-mark.svg" alt="Github Logo">
-                    </a>
-                </div>
+                    <div class="col-12 mt-3">
+                        <a href="https://github.com/steven-weeden" target="_blank">
+                            <img src="assets\img\github-mark.svg" alt="Github Logo">
+                        </a>
+                    </div>
 
-                <div class="col-12">
-                    <div class="row mt-3 pt-3 border-top">
-                        <div class="col-4 mt-4 d-flex justify-content-center px-4">
+                    <div class="col-12">
+                        <div class="row mt-3 pt-3 border-top">
+                            <div class="col-4 mt-4 d-flex justify-content-center px-4">
 
-                            <div class="card text-bg-dark flex-fill" style="width: 18rem;">
-                                <img src="assets\img\icon.svg" class="img-fluid pt-2" alt="..." style="height: 200px; object-fit: contain;">
-                                <div class="card-body d-flex flex-column justify-content-end">
-                                <h5 class="card-title">Paws and Perils</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="https://github.com/steven-weeden/Paws-and-Perils" target="_blank" rel="noreferrer" class="btn btn-light">Github Link</a>
-                                </div>
-                            </div>                      
+                                <div class="card text-bg-dark flex-fill" style="width: 18rem;">
+                                    <img src="assets\img\icon.svg" class="img-fluid pt-2" alt="..." style="height: 200px; object-fit: contain;">
+                                    <div class="card-body d-flex flex-column justify-content-end">
+                                    <h5 class="card-title">Paws and Perils</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="https://github.com/steven-weeden/Paws-and-Perils" target="_blank" rel="noreferrer" class="btn btn-light">Github Link</a>
+                                    </div>
+                                </div>                      
 
+                            </div>
+
+                            <div class="col-4 mt-4 d-flex justify-content-center px-4">
+
+                                <div class="card text-bg-dark flex-fill" style="width: 18rem;">
+                                    <img src="assets\img\jupyter_logo_icon.png" class="img-fluid pt-2" alt="..." style="height: 200px; object-fit: contain;">
+                                    <div class="card-body d-flex flex-column justify-content-end">
+                                    <h5 class="card-title">Fraudulent Purchase Detection Model</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="https://github.com/steven-weeden/FraudModel" target="_blank" rel="noreferrer" class="btn btn-light">Github Link</a>
+                                    </div>
+                                </div>                      
+
+                            </div>
+
+                            <div class="col-4 mt-4 d-flex justify-content-center px-4">
+
+                                <div class="card text-bg-dark flex-fill" style="width: 18rem;">
+                                    <img src="assets\img\html.png" class="img-fluid pt-2" alt="..." style="height: 200px; object-fit: contain;">
+                                    <div class="card-body d-flex flex-column justify-content-end">
+                                    <h5 class="card-title">Portfolio Website</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="https://github.com/steven-weeden/FraudModel" target="_blank" rel="noreferrer" class="btn btn-light">Github Link</a>
+                                    </div>
+                                </div>                      
+
+                            </div>
                         </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row mt-3 pt-3">
+                            <div class="col-4 mt-4 d-flex justify-content-center px-4">
 
-                        <div class="col-4 mt-4 d-flex justify-content-center px-4">
+                                <div class="card text-bg-dark flex-fill" style="width: 18rem;">
+                                    <img src="assets\img\icon.svg" class="img-fluid pt-2" alt="..." style="height: 200px; object-fit: contain;">
+                                    <div class="card-body d-flex flex-column justify-content-end">
+                                    <h5 class="card-title">Paws and Perils</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="https://github.com/steven-weeden/Paws-and-Perils" target="_blank" rel="noreferrer" class="btn btn-light">Github Link</a>
+                                    </div>
+                                </div>                      
 
-                            <div class="card text-bg-dark flex-fill" style="width: 18rem;">
-                                <img src="assets\img\jupyter_logo_icon.png" class="img-fluid pt-2" alt="..." style="height: 200px; object-fit: contain;">
-                                <div class="card-body d-flex flex-column justify-content-end">
-                                <h5 class="card-title">Fraudulent Purchase Detection Model</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="https://github.com/steven-weeden/FraudModel" target="_blank" rel="noreferrer" class="btn btn-light">Github Link</a>
-                                </div>
-                            </div>                      
+                            </div>
 
-                        </div>
+                            <div class="col-4 mt-4 d-flex justify-content-center px-4">
 
-                        <div class="col-4 mt-4 d-flex justify-content-center px-4">
+                                <div class="card text-bg-dark flex-fill" style="width: 18rem;">
+                                    <img src="assets\img\jupyter_logo_icon.png" class="img-fluid pt-2" alt="..." style="height: 200px; object-fit: contain;">
+                                    <div class="card-body d-flex flex-column justify-content-end">
+                                    <h5 class="card-title">Fraudulent Purchase Detection Model</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="https://github.com/steven-weeden/FraudModel" target="_blank" rel="noreferrer" class="btn btn-light">Github Link</a>
+                                    </div>
+                                </div>                      
 
-                            <div class="card text-bg-dark flex-fill" style="width: 18rem;">
-                                <img src="assets\img\html.png" class="img-fluid pt-2" alt="..." style="height: 200px; object-fit: contain;">
-                                <div class="card-body d-flex flex-column justify-content-end">
-                                <h5 class="card-title">Portfolio Website</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="https://github.com/steven-weeden/FraudModel" target="_blank" rel="noreferrer" class="btn btn-light">Github Link</a>
-                                </div>
-                            </div>                      
+                            </div>
 
+                            <div class="col-4 mt-4 d-flex justify-content-center px-4">
+
+                                <div class="card text-bg-dark flex-fill" style="width: 18rem;">
+                                    <img src="assets\img\html.png" class="img-fluid pt-2" alt="..." style="height: 200px; object-fit: contain;">
+                                    <div class="card-body d-flex flex-column justify-content-end">
+                                    <h5 class="card-title">Portfolio Website</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="https://github.com/steven-weeden/FraudModel" target="_blank" rel="noreferrer" class="btn btn-light">Github Link</a>
+                                    </div>
+                                </div>                      
+
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
-                    <div class="row mt-3 pt-3">
-                        <div class="col-4 mt-4 d-flex justify-content-center px-4">
-
-                            <div class="card text-bg-dark flex-fill" style="width: 18rem;">
-                                <img src="assets\img\icon.svg" class="img-fluid pt-2" alt="..." style="height: 200px; object-fit: contain;">
-                                <div class="card-body d-flex flex-column justify-content-end">
-                                <h5 class="card-title">Paws and Perils</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="https://github.com/steven-weeden/Paws-and-Perils" target="_blank" rel="noreferrer" class="btn btn-light">Github Link</a>
-                                </div>
-                            </div>                      
-
-                        </div>
-
-                        <div class="col-4 mt-4 d-flex justify-content-center px-4">
-
-                            <div class="card text-bg-dark flex-fill" style="width: 18rem;">
-                                <img src="assets\img\jupyter_logo_icon.png" class="img-fluid pt-2" alt="..." style="height: 200px; object-fit: contain;">
-                                <div class="card-body d-flex flex-column justify-content-end">
-                                <h5 class="card-title">Fraudulent Purchase Detection Model</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="https://github.com/steven-weeden/FraudModel" target="_blank" rel="noreferrer" class="btn btn-light">Github Link</a>
-                                </div>
-                            </div>                      
-
-                        </div>
-
-                        <div class="col-4 mt-4 d-flex justify-content-center px-4">
-
-                            <div class="card text-bg-dark flex-fill" style="width: 18rem;">
-                                <img src="assets\img\html.png" class="img-fluid pt-2" alt="..." style="height: 200px; object-fit: contain;">
-                                <div class="card-body d-flex flex-column justify-content-end">
-                                <h5 class="card-title">Portfolio Website</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="https://github.com/steven-weeden/FraudModel" target="_blank" rel="noreferrer" class="btn btn-light">Github Link</a>
-                                </div>
-                            </div>                      
-
-                        </div>
-                    </div>
-                </div>
+        
             </div>
-    
-        </div>
-
-        <div id="contact" class="vh-100 flex-column justify-content-center align-items-center text-center card-pop mb-0">
-            <h3 class="text-black">Contact</h3>
         </div>
     </div>
-    </div>
-</div>
 
-<script src="assets/js/index.js"></script>
-<script type="module" src="https://cdn.jsdelivr.net/npm/@hsablonniere/activity-graph/+esm"></script>
+    <script src="assets/js/index.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@hsablonniere/activity-graph/+esm"></script>
 
 
 </body>

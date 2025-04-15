@@ -14,7 +14,7 @@
  
  .card-pop {
     
-    background: #ECDFCC;
+    background: #e3d5ca;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     border-radius: min(2vw, 10px);
     padding: 1.5rem;
@@ -154,4 +154,24 @@
 
 .navbar {
     --bs-navbar-active-color: #A5B68D;
+  }
+
+.home-text::before{
+    content: "<";
+    font-size: 70px;
+    color: #a1a1a1;
+}
+
+.home-text::after{
+    content: ">";
+    font-size: 70px;
+    color: #a1a1a1;
+}
+
+.no-before::before {
+    content: none;
+  }
+
+.no-after::after {
+    content: none;
   }
