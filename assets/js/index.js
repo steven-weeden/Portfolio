@@ -49,35 +49,117 @@ document.addEventListener("DOMContentLoaded", () => {
         if (index >= elements.length) return;
 
         const el = elements[index];
-        const parent = el.closest(".col"); // Assuming the parent `.col` is hidden
+        const parent = el.closest(".col");
 
-        // Reveal the line before typing
         if (parent) {
-            parent.style.display = "block"; // or "flex" if needed
+            parent.style.display = "block";
         } else {
             el.style.display = "block";
         }
 
-        const fullText = el.getAttribute("data-text");
-        let i = 0;
+        const fullHTML = el.innerHTML.trim();
+        const temp = document.createElement("div");
+        temp.innerHTML = fullHTML;
 
-        function typeChar() {
-            if (i <= fullText.length) {
-                el.innerHTML = fullText.slice(0, i);
-                i++;
-                setTimeout(typeChar, 80);
-            } else {
-                el.classList.add("finished");
-                if (el.querySelector("span")) {
-                    el.appendChild(el.querySelector("span"));
+        const output = [];
+        function flatten(node) {
+            for (let child of node.childNodes) {
+                if (child.nodeType === Node.TEXT_NODE) {
+                    const text = child.textContent;
+                    for (let char of text) {
+                        output.push({ type: "text", content: char });
+                    }
+                } else if (child.nodeType === Node.ELEMENT_NODE) {
+                    const span = document.createElement(child.tagName);
+                    for (let attr of child.attributes) {
+                        span.setAttribute(attr.name, attr.value);
+                    }
+                    const nested = [];
+                    flatten(child); // Recursive fill into `output`
+                    output.push({ type: "element", element: span, children: nested });
                 }
-                index++;
-                setTimeout(typeNext, 200);
             }
         }
 
-        typeChar();
+        // Updated flatten that returns children array to preserve structure
+        function flatten(node, container = output) {
+            for (let child of node.childNodes) {
+                if (child.nodeType === Node.TEXT_NODE) {
+                    const text = child.textContent;
+                    for (let char of text) {
+                        container.push({ type: "text", content: char });
+                    }
+                } else if (child.nodeType === Node.ELEMENT_NODE) {
+                    const span = document.createElement(child.tagName);
+                    for (let attr of child.attributes) {
+                        span.setAttribute(attr.name, attr.value);
+                    }
+                    const nested = [];
+                    flatten(child, nested); // recurse into children
+                    container.push({ type: "element", element: span, children: nested });
+                }
+            }
+        }
+
+        flatten(temp);
+
+        el.innerHTML = ""; // Clear the element
+
+        function typeRecursive(container, targetEl) {
+            let i = 0;
+
+            function step() {
+                if (i >= container.length) {
+                    el.classList.add("finished");
+                    index++;
+                    setTimeout(typeNext, 200);
+                    return;
+                }
+
+                const node = container[i];
+
+                if (node.type === "text") {
+                    targetEl.append(node.content);
+                    i++;
+                    setTimeout(step, 80);
+                } else if (node.type === "element") {
+                    const clone = node.element.cloneNode(false);
+                    targetEl.appendChild(clone);
+                    let childIndex = 0;
+
+                    function typeChild() {
+                        if (childIndex >= node.children.length) {
+                            i++;
+                            setTimeout(step, 0);
+                            return;
+                        }
+
+                        const child = node.children[childIndex];
+
+                        if (child.type === "text") {
+                            clone.append(child.content);
+                            childIndex++;
+                            setTimeout(typeChild, 80);
+                        } else if (child.type === "element") {
+                            const childClone = child.element.cloneNode(false);
+                            clone.appendChild(childClone);
+                            typeRecursive([child], childClone);
+                            childIndex++;
+                        }
+                    }
+
+                    typeChild();
+                }
+            }
+
+            step();
+        }
+
+        typeRecursive(output, el);
     }
 
     typeNext();
 });
+
+
+
