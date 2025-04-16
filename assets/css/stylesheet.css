@@ -162,3 +162,12 @@
 .navbar {
     --bs-navbar-active-color: #A5B68D;
   }
+
+
+body::-webkit-scrollbar {
+display: none; /* hides scrollbar, still scrolls */
+}
+
+html {
+scrollbar-width: none; /* Firefox: hide scrollbar */
+}
