@@ -42,23 +42,25 @@
                 </div>
             </div>
         </div>
-    <!---------------------------------NavBar^-------------------------------------->
+<!---------------------------------NavBar^-------------------------------------->
     
         <div class="col-8 flex-fill ">
 
             <div id="home" class="container-fluid p-4 vh-100 card-pop mt-0 d-flex justify-content-center align-items-center flex-column">
                 <div class="row text-start flex-column">
                     <div class="col">
-                        <div class="home-text" style="font-size: 50px;">&lt;Hello, I'm <span style="color: #23adec;">Steven</span>&gt;</div>
+                        <div class="home-text responsive-text">&lt;Hello, I'm <span style="color: #23adec;">Steven</span>&gt;</div>
                     </div>
                     <div class="col" style="display: none;">
-                        <div class="home-text" style="font-size: 50px;">&lt;I am a <span style="color: #e0c00a;">graduated</span></div>
+                        <div class="home-text responsive-text">&lt;I am a <span style="color: #e0c00a;">graduated</span></div>
                     </div>
                     <div class="col" style="display: none;">
-                        <div class="home-text" style="font-size: 50px;"><span style="color: #23adec;">Computer Science</span> Major&gt;</div>
+                        <div class="home-text responsive-text"><span style="color: #23adec;">Computer Science</span> Major&gt;</div>
                     </div>
                 </div>      
             </div>
+
+<!---------------------------------Home^-------------------------------------->
 
             <div id="about" class="vh-100 justify-content-center align-items-center card-pop overflow-auto">
                 <div class="container">
@@ -67,10 +69,12 @@
                         <div class="col-12 text-center">
                             <h3 class="text-black">About Me</h3>
                         </div>
+
                     </div>
+
                     <div class="row align-items-top justify-content-center gx-4 text-center pt-5">
                         <div class="col-md-4 rounded">
-                            <div class="rounded p-3 h-100" style="background-color: #e5e5e5;">
+                            <div class="rounded responsive-box" style="background-color: #e5e5e5;">
                                 <div class="row d-flex flex-column">
                                     <div class="col">
                                         <img src="assets\img\grad_cap.png" alt="grad_cap" class="img-fluid" style="width: 40%;">
@@ -79,7 +83,7 @@
                                         <h3>Education</h3>
                                     </div>
                                     <div class="col mt-3">
-                                        <p style="overflow-wrap: break-word;">I earned my Bachelor of Science in Computer Science from Texas State University. Along the way, I've built a strong foundation in areas like machine learning, software engineering, 
+                                        <p class= "about-scale" style="overflow-wrap: break-word;">I earned my Bachelor of Science in Computer Science from Texas State University. Along the way, I've built a strong foundation in areas like machine learning, software engineering, 
                                             and database management. What really drives me, though, is a genuine curiosity to keep learning—especially outside the typical boundaries of computer science. 
                                             That mindset has led me to explore other fields, from electrical engineering and hands-on repair work to music theory. 
                                             I believe being adaptable and open to new knowledge is key to building a well-rounded skill set.
@@ -92,7 +96,7 @@
                         </div>
 
                         <div class="col-md-4 rounded">
-                            <div class="rounded p-3 h-100" style="background-color: #e5e5e5;">
+                            <div class="rounded responsive-box" style="background-color: #e5e5e5;">
                                 <div class="row d-flex flex-column">
                                     <div class="col">
                                         <img src="assets\img\person.png" alt="person logo" class="img-fluid" style="width: 20%;">
@@ -101,7 +105,7 @@
                                         <h3>Personal Life</h3>
                                     </div>
                                     <div class="col mt-3">
-                                        <p style="overflow-wrap: break-word;">From a young age, I've been drawn to technology and computer science. That curiosity pushed me to teach myself the fundamentals of computer hardware and programming. 
+                                        <p class= "about-scale" style="overflow-wrap: break-word;">From a young age, I've been drawn to technology and computer science. That curiosity pushed me to teach myself the fundamentals of computer hardware and programming. 
                                             By the time I was 12, I had built my first computer, and at 16, I launched my first website—mostly by diving into resources like YouTube and Google. 
                                             What started as a hobby quickly became a passion, which made pursuing a degree in computer science feel like a natural next step, not just something I had to do.
                                         </p>
@@ -111,7 +115,7 @@
                         </div>    
 
                         <div class="col-md-4 rounded">
-                            <div class="rounded p-3 h-100" style="background-color: #e5e5e5;">
+                            <div class="rounded responsive-box" style="background-color: #e5e5e5;">
                                 <div class="row">
                                     <div class="col-12 pt-2">
                                         <img src="assets\img\briefcase.png" alt="briefcase logo" class="img-fluid" style="width: 40%;">
@@ -120,7 +124,7 @@
                                         <h3>Work Experience</h3>
                                     </div>
                                     <div class="col-12 mt-3">
-                                        <p style="overflow-wrap: break-word;">Over the years, I've held a variety of jobs—everything from retail and mechanic work to helping out as an electrician. 
+                                        <p class= "about-scale" style="overflow-wrap: break-word;">Over the years, I've held a variety of jobs—everything from retail and mechanic work to helping out as an electrician. 
                                             My first real experience with work started at age 12, pitching in with the family business. 
                                             Growing up with a single mother who was building a business from the ground up meant I had to step up early on. 
                                             While it wasn't always easy, I take a lot of pride in starting young—it taught me the value of hard work and built the strong work ethic I carry with me today. 
@@ -134,104 +138,68 @@
                 </div>
             </div>
 
-            <div id="projects" class="container-fluid vh-100 flex-column align-items-center text-center card-pop overflow-auto">
-                <div class="row justify-content-center">
-                    <div class="col">
-                        <h3 class="text-black">Projects</h3>
-                    </div>
+<!---------------------------------About^-------------------------------------->
 
-                    <div class="col-12">
-                        <div class="row mt-3 pt-3">
-                            <div class="col-4 mt-4 d-flex justify-content-center px-4">
+            <div id="projects" class="vh-100 justify-content-center align-items-center card-pop overflow-auto">
+                <div class="container">
 
-                                <div class="card text-bg-dark flex-fill" style="width: 18rem;">
-                                    <img src="assets\img\icon.svg" class="img-fluid pt-2" alt="..." style="height: 200px; object-fit: contain;">
-                                    <div class="card-body d-flex flex-column justify-content-end">
-                                    <h5 class="card-title">Paws and Perils</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="https://github.com/steven-weeden/Paws-and-Perils" target="_blank" rel="noreferrer" class="btn btn-light">Github Link</a>
-                                    </div>
-                                </div>                      
+                    <div class="row">
 
-                            </div>
-
-                            <div class="col-4 mt-4 d-flex justify-content-center px-4">
-
-                                <div class="card text-bg-dark flex-fill" style="width: 18rem;">
-                                    <img src="assets\img\jupyter_logo_icon.png" class="img-fluid pt-2" alt="..." style="height: 200px; object-fit: contain;">
-                                    <div class="card-body d-flex flex-column justify-content-end">
-                                    <h5 class="card-title">Fraudulent Purchase Detection Model</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="https://github.com/steven-weeden/FraudModel" target="_blank" rel="noreferrer" class="btn btn-light">Github Link</a>
-                                    </div>
-                                </div>                      
-
-                            </div>
-
-                            <div class="col-4 mt-4 d-flex justify-content-center px-4">
-
-                                <div class="card text-bg-dark flex-fill" style="width: 18rem;">
-                                    <img src="assets\img\html.png" class="img-fluid pt-2" alt="..." style="height: 200px; object-fit: contain;">
-                                    <div class="card-body d-flex flex-column justify-content-end">
-                                    <h5 class="card-title">Portfolio Website</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="https://github.com/steven-weeden/FraudModel" target="_blank" rel="noreferrer" class="btn btn-light">Github Link</a>
-                                    </div>
-                                </div>                      
-
-                            </div>
+                        <div class="col-12 text-center">
+                            <h3 class="text-black">Projects</h3>
                         </div>
                     </div>
-                    <!--<div class="col-12">
-                        <div class="row mt-3 pt-3">
-                            <div class="col-4 mt-4 d-flex justify-content-center px-4">
 
-                                <div class="card text-bg-dark flex-fill" style="width: 18rem;">
-                                    <img src="assets\img\icon.svg" class="img-fluid pt-2" alt="..." style="height: 200px; object-fit: contain;">
-                                    <div class="card-body d-flex flex-column justify-content-end">
-                                    <h5 class="card-title">Paws and Perils</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="https://github.com/steven-weeden/Paws-and-Perils" target="_blank" rel="noreferrer" class="btn btn-light">Github Link</a>
-                                    </div>
-                                </div>                      
+                    <div class="row align-items-top justify-content-center gx-4 text-center pt-5">
+                        <div class="col-12 col-md-6 col-lg-4 mt-4 d-flex justify-content-center px-4">
 
-                            </div>
+                            <div class="card text-bg-dark flex-fill responsive-box-project">
+                                <img src="assets\img\icon.svg" class="img-fluid pt-4" alt="..." style="height: 200px; object-fit: contain;">
+                                <div class="card-body d-flex flex-column pt-5">
+                                <h5 class="card-title about-scale">Paws and Perils</h5>
+                                <p class="card-text about-scale">A roguelike cat-themed adventure game developed using Godot Script within the Godot Engine framework.</p>
+                                <a href="https://github.com/steven-weeden/Paws-and-Perils" target="_blank" rel="noreferrer" class="btn btn-light mt-auto about-scale mx-auto">Github Link</a>
+                                </div>
+                            </div>                      
 
-                            <div class="col-4 mt-4 d-flex justify-content-center px-4">
-
-                                <div class="card text-bg-dark flex-fill" style="width: 18rem;">
-                                    <img src="assets\img\jupyter_logo_icon.png" class="img-fluid pt-2" alt="..." style="height: 200px; object-fit: contain;">
-                                    <div class="card-body d-flex flex-column justify-content-end">
-                                    <h5 class="card-title">Fraudulent Purchase Detection Model</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="https://github.com/steven-weeden/FraudModel" target="_blank" rel="noreferrer" class="btn btn-light">Github Link</a>
-                                    </div>
-                                </div>                      
-
-                            </div>
-
-                            <div class="col-4 mt-4 d-flex justify-content-center px-4">
-
-                                <div class="card text-bg-dark flex-fill" style="width: 18rem;">
-                                    <img src="assets\img\html.png" class="img-fluid pt-2" alt="..." style="height: 200px; object-fit: contain;">
-                                    <div class="card-body d-flex flex-column justify-content-end">
-                                    <h5 class="card-title">Portfolio Website</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="https://github.com/steven-weeden/FraudModel" target="_blank" rel="noreferrer" class="btn btn-light">Github Link</a>
-                                    </div>
-                                </div>                      
-
-                            </div>
                         </div>
-                    </div>-->
-                </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 mt-4 d-flex justify-content-center px-4">
+
+                            <div class="card text-bg-dark flex-fill responsive-box-project">
+                                <img src="assets\img\jupyter_logo_icon.png" class="img-fluid pt-4" alt="..." style="height: 200px; object-fit: contain;">
+                                <div class="card-body d-flex flex-column pt-5">
+                                <h5 class="card-title about-scale">Fraudulent Purchase Detection Model</h5>
+                                <p class="card-text about-scale">A machine learning model engineered to identify fraudulent online transactions through multi-dimensional analysis of geolocation data, transaction amounts, and supplementary features. Implemented using Python within the JupyterLab environment.</p>
+                                <a href="https://github.com/steven-weeden/FraudModel" target="_blank" rel="noreferrer" class="btn btn-light mt-auto about-scale mx-auto">Github Link</a>
+                                </div>
+                            </div>                      
+
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 mt-4 d-flex justify-content-center px-4">
+
+                            <div class="card text-bg-dark flex-fill responsive-box-project">
+                                <img src="assets\img\html.png" class="img-fluid pt-4" alt="..." style="height: 200px; object-fit: contain;">
+                                <div class="card-body d-flex flex-column pt-5">
+                                <h5 class="card-title about-scale">Portfolio Website</h5>
+                                <p class="card-text about-scale">The current website you are viewing! :D Written using HTML5, CSS, and Javascript.</p>
+                                <a href="https://github.com/steven-weeden/FraudModel" target="_blank" rel="noreferrer" class="btn btn-light mt-auto about-scale mx-auto">Github Link</a>
+                                </div>
+                            </div>                      
+
+                        </div>
+                    </div>
         
+                </div>
             </div>
 
-            <div id="contact" class="container-fluid vh-100 flex-column align-items-center text-center card-pop overflow-auto">
+<!---------------------------------Projects^-------------------------------------->
+
+            <div id="contact" class="vh-100 d-flex justify-content-center align-items-center card-pop overflow-auto">
                 <div class="container pt-4">
-                    <div class="row mt-5 px-5 d-flex">
-                        <div class="col d-flex align-items-center justify-content-center rounded" style="background-color: #e5e5e5;">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center rounded mb-2 mb-lg-0 contact-box">
                             <div class="row d-flex flex-column">
                                 <div class="col-12 text-center mb-3">
                                     <h4 class="text-black text-decoration-underline">Contacts</h4>
@@ -239,25 +207,25 @@
                                 <div class="col my-3">
                                     <div class="d-flex align-items-center">
                                         <img src="assets/img/gmail.svg" alt="email logo" style="margin-right: 10px;">
-                                        <a class="text-black mb-0" style="font-size: 1.25rem;" href="mailto:weedensteven@gmail.com" target="_blank" rel="noreferrer">weedensteven@gmail.com</a>
+                                        <a class="text-black mb-0 contact-box-text" href="mailto:weedensteven@gmail.com" target="_blank" rel="noreferrer">weedensteven@gmail.com</a>
                                     </div>                                
                                 </div>
                                 <div class="col my-3">
                                     <div class="d-flex align-items-center">
                                         <img src="assets/img/linkedin.svg" alt="linkedin logo" style="margin-right: 10px;">
-                                        <a class="text-black mb-0" style="font-size: 1.25rem;" href="https://www.linkedin.com/in/steven-weeden-747a521ba/" target="_blank" rel="noreferrer">Steven Weeden</a>
+                                        <a class="text-black mb-0 contact-box-text" href="https://www.linkedin.com/in/steven-weeden-747a521ba/" target="_blank" rel="noreferrer">Steven Weeden</a>
                                     </div>                                
                                 </div>
                                 <div class="col my-3">
                                     <div class="d-flex align-items-center">
                                         <img src="assets/img/github.svg" alt="github logo" style="margin-right: 10px;">
-                                        <a class="text-black mb-0" style="font-size: 1.25rem;" href="https://github.com/steven-weeden" target="_blank" rel="noreferrer">steven-weeden</a>
+                                        <a class="text-black mb-0 contact-box-text" href="https://github.com/steven-weeden" target="_blank" rel="noreferrer">steven-weeden</a>
                                     </div>                                
                                 </div>
                             </div>
                         </div>
                     
-                        <div class="col d-flex rounded" style="background-color: #e5e5e5;">
+                        <!---<div class="col-12 col-lg-6 d-flex rounded contact-box">
                             <form class="row g-3 px-3">
                                 <div class="col-md-6">
                                 <label for="inputFName" class="form-label">First Name</label>
@@ -279,12 +247,14 @@
                                 <button type="submit" class="btn btn-primary">Submit</button>
                                 </div>
                             </form>
-                        </div>
+                        </div>--->
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+<!---------------------------------Contact^-------------------------------------->
 
     <script src="assets/js/index.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@hsablonniere/activity-graph/+esm"></script>

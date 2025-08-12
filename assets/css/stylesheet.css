@@ -144,7 +144,7 @@
 }
 
 .nav-button {
-    font-size: 2rem;
+    font-size: clamp(0.9rem, 1vw + 0.5rem, 2rem);
     color: #585563;
     background: none;
     border: none;
@@ -165,9 +165,49 @@
 
 
 body::-webkit-scrollbar {
-display: none; /* hides scrollbar, still scrolls */
+    display: none; /* hides scrollbar, still scrolls */
 }
 
 html {
-scrollbar-width: none; /* Firefox: hide scrollbar */
+    scrollbar-width: none; /* Firefox: hide scrollbar */
+}
+
+.about-scale{
+    font-size: clamp(0.9rem, 1vw + 0.5rem, 1.2rem);
+    line-height: 1.6;
+}
+
+.responsive-box {
+    background-color: #e5e5e5;
+    padding: clamp(1rem, 2vw, 2rem);
+    border-radius: clamp(8px, 1vw, 16px);
+    height: 100%; /* keeps all boxes the same height in their column */
+    display: flex;
+    flex-direction: column;
+    min-height: clamp(300px, 40vh, 500px);
+}
+
+.responsive-text{
+    font-size: clamp(0.9rem, 2vw, 6rem);
+}
+
+.responsive-box-project{
+    min-height: clamp(300px, 40vh, 500px);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-box {
+  background-color: #e5e5e5;
+  padding: clamp(1rem, 2vw, 2rem);
+  border-radius: clamp(8px, 1vw, 16px);
+}
+
+.contact-box-text {
+  font-size: clamp(1rem, 0.5vw + 1rem, 1.25rem);
+}
+
+.contact-box img {
+  width: clamp(20px, 4vw, 30px);
+  height: auto;
 }
